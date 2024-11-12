@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1700px) {
+    body .second .three {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body .another .mobile {
+        display: flex;
+    }
+    body .next .self {
+        display: flex;
+    }
+}
+
+@media (max-width: 1200px) {
+    body .second .three {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    body .another .mobile {
+        display: grid;
+        margin-top: 20rem;
+    }
+    body .next .self {
+        display: grid;
+        margin-top: 50rem;
+    }
+    body .next .self .details {
+        transform: translateX(15rem);
+    }
+    body .intropy .alot {
+        display: grid;
+        margin-top: 70rem;
+    }
+    body .footer {
+        margin-top: 40rem;
+    }
+    body .page1 h1,body .page2 h1,body .page3 h1,body .page4 h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    body .footer .yall .element .honny {
+        gap: 3rem;
+    }
+    body header nav {
+        gap: 20px;
+    }
+    body header {
+        padding: 10px 50px;
+    }
+    body .lost .text h1 {
+        font-size: 3.4rem;
+    }
+    body header .button .login, body header .button .btn {
+        width: 100px;
+    }
+    body header nav a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 680px) {
+    body .second .three {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    body .another .mobile {
+        display: grid;
+        margin-top: 20rem;
+    }
+    body .next .self {
+        display: grid;
+    }
+    body .page1 h1,body .page2 h1,body .page3 h1,body .page4 h1 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    body .footer .yall .element .honny {
+        gap: 1rem;
+    }
+    body header .button {
+        display: grid;
+    }
+}
+
+body {
+    background: #dedbdb;
+}
+
+.lost {
+    background: #000;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    z-index: 1000;
+    background: #ffffff;
+    position: fixed;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header nav .logo {
+    width: 5%;
+}
+
+header nav .logo img {
+    width: 100%;
+}
+
+header nav a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color: #de1717;
+}
+
+header .button {
+    display: flex;
+    gap: 20px;
+}
+
+header .button .login {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #eded41;
+    color: #000;
+    font-weight: bold;
+    transition: all .3s ease;
+    box-shadow: 0 0 20px #777777;
+    cursor: pointer;
+}
+
+header .button .login:hover {
+    background: #ffff00;
+}
+
+header .button .btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #ed6941;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+    color: #fff;
+    box-shadow: 0 0 20px #777777;
+}
+
+header .button .btn:hover {
+    background: #ff3c00;
+}
+
+.lost .all {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lost .all .component {
+    display: grid;
+    gap: 2rem;
+}
+
+.lost .text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan,
+    0 0 80px cyan;
+}
+
+.lost .text h1 span {
+    color: #fff;
+}
+
+.lost .main {
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    border-radius: 9999px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lost .main input {
+    width: 70%;
+    background: transparent;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 4rem;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.lost .main label {
+    position: relative;
+    right: 32rem;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.lost .main button {
+    width: 150px;
+    background: #eded41;
+    height: 80%;
+    color: #000;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all .3s ease;
+    margin-right: 10px;
+}
+
+.lost .main button:hover {
+    background: #ffff00;
+}
+
+.lost marquee {
+    color: #000;
+    position: absolute;
+    top: 6rem;
+}
+
+.second {
+    width: 100%;
+    background: #dedbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second .three {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 10rem;
+}
+
+.second .three .box {
+    background: 100%;
+    height: 60vh;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #0c5a83;
+    transition: all .5s ease;
+}
+
+.second .three .box:hover {
+    transform: translateY(-15px);
+}
+
+.second .three .box .image {
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.second .three .box .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.second .three .box .text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.second .three .box .text h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.another {
+    width: 100%;
+    height: 100vh;
+    background: #dedbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.another .mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    z-index: 1;
+}
+
+.another .mobile .piture {
+    width: 300px;
+    height: 600px;
+    background-image: url('../img/pngwing.com\ \(37\).png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.another .mobile .piture .inter {
+    width: 65%;
+    height: 73%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-image: url('../img/Screenshot\ 2024-11-08\ 222040.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    z-index: -1;
+}
+
+.another .mobile .details {
+    display: grid;
+    gap: 20px;
+}
+
+.another .mobile .details h1 {
+    font-size: 4rem;
+}
+
+.next {
+    width: 100%;
+    height: 100vh;
+    background: #dedbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next .self {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.next .laptop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.next .laptop .photo {
+    width: 60rem;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.next .laptop .photo .in {
+    width: 100%;
+    height: 93%;
+    background-image: url('../img/laptop.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next .self .photo .in img {
+    width: 75%;
+    height: 90%;
+    z-index: -1;
+}
+
+.next .self .station {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next .self .details {
+    display: grid;
+    gap: 20px;
+}
+
+.next .self .details h1 {
+    font-size: 4rem;
+}
+
+.intropy {
+    width: 100%;
+    height: 100vh;
+    background: #dedbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intropy .alot {
+    display: flex;
+    width: 100%;
+}
+
+.intropy .desktop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.intropy .desktop .photo {
+    width: 60rem;
+    height: 600px;
+    background-image: url('../img/desktop.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.intropy .desktop .photo .in {
+    width: 100%;
+    height: 93%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intropy .alot .photo .in img {
+    width: 85%;
+    height: 90%;
+    transform: translateY(-20px);
+    z-index: -1;
+}
+
+.intropy .alot .stationart {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intropy .alot .more {
+    display: grid;
+    gap: 20px;
+}
+
+.intropy .alot .more h1 {
+    font-size: 4rem;
+}
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background: #0c5a83;
+    align-items: center;
+    display: flex;
+}
+
+.footer .yall {
+    width: 90%;
+    background: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .yall .element .honny {
+    display: flex;
+    background: transparent;
+    height: 100%;
+    gap: 5rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer .yall .element .honny .honner .page4, .page3 {
+    gap: 15px;
+}
+
+.page1,.page2,.page3,.page4 {
+    display: grid;
+}
+
+.page1 h1,.page2 h1,.page3 h1,.page4 h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.page1 a,.page2 a,.page3 a,.page4 a {
+    color: #dedbdb;
+    text-decoration: none;
+}
+
+.page1 a:hover,.page2 a:hover,.page3 a:hover,.page4 a:hover {
+    text-decoration: underline;
+}
+
+.footer .imogi {
+    width: 20%;
+    background: transparent;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer .imogi .yours {
+    width: 50%;
+}
+
+.footer .imogi img {
+    width: 100%;
+}
+
+.footer .imogi h1 {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer .imogi p {
+    color: #dedbdb;
+}
