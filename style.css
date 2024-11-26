@@ -9,86 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 1700px) {
-    body .second .three {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    body .another .mobile {
-        display: flex;
-    }
-    body .next .self {
-        display: flex;
-    }
-}
-
-@media (max-width: 1200px) {
-    body .second .three {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    body .another .mobile {
-        display: grid;
-        margin-top: 20rem;
-    }
-    body .next .self {
-        display: grid;
-        margin-top: 50rem;
-    }
-    body .next .self .details {
-        transform: translateX(15rem);
-    }
-    body .intropy .alot {
-        display: grid;
-        margin-top: 70rem;
-    }
-    body .footer {
-        margin-top: 40rem;
-    }
-    body .page1 h1,body .page2 h1,body .page3 h1,body .page4 h1 {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    body .footer .yall .element .honny {
-        gap: 3rem;
-    }
-    body header nav {
-        gap: 20px;
-    }
-    body header {
-        padding: 10px 50px;
-    }
-    body .lost .text h1 {
-        font-size: 3.4rem;
-    }
-    body header .button .login, body header .button .btn {
-        width: 100px;
-    }
-    body header nav a {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 680px) {
-    body .second .three {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    body .another .mobile {
-        display: grid;
-        margin-top: 20rem;
-    }
-    body .next .self {
-        display: grid;
-    }
-    body .page1 h1,body .page2 h1,body .page3 h1,body .page4 h1 {
-        font-size: 1.4rem;
-        font-weight: 500;
-    }
-    body .footer .yall .element .honny {
-        gap: 1rem;
-    }
-    body header .button {
-        display: grid;
-    }
-}
 
 body {
     background: #dedbdb;
@@ -257,248 +177,138 @@ header .button .btn:hover {
     top: 6rem;
 }
 
-.second {
-    width: 100%;
-    background: #dedbdb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.second .three {
-    width: 80%;
-    margin: auto;
+.gap {
+    width: 90%;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    margin-top: 10rem;
-}
-
-.second .three .box {
-    background: 100%;
-    height: 60vh;
-    border-radius: 5px;
-    overflow: hidden;
-    background: #0c5a83;
-    transition: all .5s ease;
-}
-
-.second .three .box:hover {
-    transform: translateY(-15px);
-}
-
-.second .three .box .image {
-    width: 100%;
-    height: 30vh;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
-.second .three .box .image img {
+.gap .picture {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gap .picture img {
+    width: 100%;
+    height: 35vh;
+}
+
+.gap .item {
+    width: 100%;
+    height: 70vh;
+    border-radius: 20px;
+    background: #0a376d;
+}
+
+.item-details {
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+}
+
+.item-details h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.item-details p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.all-sections {
+    width: 100%;
+    display: grid;
+    gap: 10rem;
+}
+
+.mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.more {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.photo .image {
+    width: 60%;
+    height: 90%;
+}
+
+.mobile .one {
     width: 100%;
     height: 100%;
 }
 
-.second .three .box .text {
+.photo .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.option {
     display: grid;
-    justify-content: center;
+    gap: 10px;
+}
+
+.option h1 {
+    font-size: 4rem;
+    color: #000;
+}
+
+.option p {
+    color: #4c4c4c;
+    font-size: 1.2rem;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    margin-top: 10px;
+}
+
+.link a {
+    padding: 10px 20px;
     color: #fff;
-}
-
-.second .three .box .text h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.another {
-    width: 100%;
-    height: 100vh;
-    background: #dedbdb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.another .mobile {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: #000;
     z-index: 1;
+    transition: .5s ease;
 }
 
-.another .mobile .piture {
-    width: 300px;
-    height: 600px;
-    background-image: url('../img/pngwing.com\ \(37\).png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    border-radius: 40px;
-    overflow: hidden;
-}
-
-.another .mobile .piture .inter {
-    width: 65%;
-    height: 73%;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    background-image: url('../img/Screenshot\ 2024-11-08\ 222040.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 40px;
-    z-index: -1;
-}
-
-.another .mobile .details {
-    display: grid;
-    gap: 20px;
-}
-
-.another .mobile .details h1 {
-    font-size: 4rem;
-}
-
-.next {
-    width: 100%;
-    height: 100vh;
-    background: #dedbdb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.next .self {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.next .laptop {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-.next .laptop .photo {
-    width: 60rem;
-    height: 600px;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-}
-
-.next .laptop .photo .in {
-    width: 100%;
-    height: 93%;
-    background-image: url('../img/laptop.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.next .self .photo .in img {
-    width: 75%;
-    height: 90%;
-    z-index: -1;
-}
-
-.next .self .station {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.next .self .details {
-    display: grid;
-    gap: 20px;
-}
-
-.next .self .details h1 {
-    font-size: 4rem;
-}
-
-.intropy {
-    width: 100%;
-    height: 100vh;
-    background: #dedbdb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intropy .alot {
-    display: flex;
-    width: 100%;
-}
-
-.intropy .desktop {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-.intropy .desktop .photo {
-    width: 60rem;
-    height: 600px;
-    background-image: url('../img/desktop.png');
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-}
-
-.intropy .desktop .photo .in {
-    width: 100%;
-    height: 93%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intropy .alot .photo .in img {
-    width: 85%;
-    height: 90%;
-    transform: translateY(-20px);
-    z-index: -1;
-}
-
-.intropy .alot .stationart {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intropy .alot .more {
-    display: grid;
-    gap: 20px;
-}
-
-.intropy .alot .more h1 {
-    font-size: 4rem;
+.link a:hover {
+    padding: 10px 30px;
 }
 
 .footer {
@@ -570,4 +380,68 @@ header .button .btn:hover {
 
 .footer .imogi p {
     color: #dedbdb;
+}
+
+@media (max-width: 1000px ) {
+    .gap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gap .item {
+        height: 80vh;
+    }
+    .mobile {
+        display: grid;
+    }
+    .photo {
+        width: 60rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .more {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .yall .element .honny {
+        gap: 2rem;
+    }
+    .page1 h1,.page2 h1,.page3 h1,.page4 h1  {
+        font-size: 1rem;
+    }
+    header nav a {
+        display: none;
+    }
+}
+@media (max-width: 600px ) {
+    .gap {
+        grid-template-columns: 1fr;
+    }
+    .gap .item {
+        height: 80vh;
+    }
+    .photo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .more {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .option {
+        display: grid;
+        justify-content: end;
+        align-items: center;
+    }
+    .option h1 {
+        font-size: 3rem;
+    }
+    .option p {
+        font-size: 1rem;
+    }
 }
